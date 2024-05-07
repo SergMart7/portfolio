@@ -62,37 +62,58 @@ header a {
     background-image: url("../assets/images/New_york_times_square-terabass.jpg");
     width: 100%;
     height: 350px;
+    background-color: #fff;
+    padding-bottom: 25px;
 }
 
 .filler h2 {
     color: var(--colour-1);
     background-color: var(--colour-2);
     width: 15%;
-    position: fixed;
+    position: absolute;
     top: 400px;
     right: 50px;
 }
 
-.content ul {
-    width: 30%;
-    display: inline-block
-}
-.content li {
-    box-align: right;
-    font-size: 45px;
-    color: var(--colour-1);
-    border-right: solid var(--colour-1);
-    padding-bottom: 50px;
-    padding-top: 45px;
-    text-align: right;
-    border-top: 10px;
+table {
+    width: 100%;
+
 }
 
-.content p {
-    position: absolute;
-    float: right;
-    margin-right: 0;
-    padding-left: 35%;
-    padding-top: 60px;
-    padding-right: 15%;
+/*left side of the screen*/
+
+th {
+    width: 30%;
+    color: var(--colour-1);
+    font-size: 35px;
+    text-align: right;
+    border-right: solid var(--colour-1);
+    justify-content: space-evenly;
+}
+
+/*right side of the screen*/
+
+td {
+    padding-left: 25px;
+}
+
+td ul {
+    list-style: none;
+}
+
+td li {
+    display: inline;
+}
+
+td a {
+    color: var(--colour-1);
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--colour-1);
+}
+
+td img {
+    height: 250px;
+    width: 250px;
+    padding: 15px;
 }
