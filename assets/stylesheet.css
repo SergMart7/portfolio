@@ -6,17 +6,14 @@
     font-size: 20px;
 
     /*variables*/
-
     --colour-1: #414648;
     --colour-2: #a3d0e3;
-
 }
 
 /*header elements*/
-
 header {
     background-color: var(--colour-1);
-    color: var(colour-2);
+    color: var(--colour-2);
     padding: 20px;
     font-weight: 300;
 }
@@ -31,14 +28,14 @@ header h1 {
     padding-bottom: 15px;
     width: 30%;
     text-align: right;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 header nav {
     padding-top: 20px;
     margin-right: 25px;
     float: right;
-    font-size: 20;
+    font-size: 20px;
 }
 
 header ul {
@@ -58,7 +55,6 @@ header a {
 }
 
 /*body starts here*/
-
 body {
     background-color: silver;
 }
@@ -82,11 +78,9 @@ body {
 
 table {
     width: 100%;
-
 }
 
 /*left side of the screen*/
-
 th {
     width: 25%;
     color: var(--colour-1);
@@ -97,7 +91,6 @@ th {
 }
 
 /*right side of the screen*/
-
 td {
     padding-left: 25px;
     padding-top: 45px;
@@ -112,13 +105,13 @@ td li {
     display: inline;
 }
 
-#about-me-text li{
+#about-me-text li {
     display: list-item;
     padding-left: 35px;
 }
 
 #funlist {
-    list-style:circle;
+    list-style: circle;
 }
 
 #funlist li {
@@ -153,12 +146,10 @@ td a {
 }
 
 /*image control*/
-
 td img {
     height: 600px;
     width: 600px;
     box-sizing: border-box;
-   
 }
 
 #moi {
@@ -168,7 +159,6 @@ td img {
 }
 
 /*image control end*/
-
 #this-is-me {
     text-align: center;
 }
@@ -178,23 +168,83 @@ h4 {
 }
 
 /*from here below classifies to mave the cursor more dynamic*/
-
 #this-is-me:hover::after {
-content: "et voilà!!!";
-position: absolute;
-right: 25px;
-top: 475px;
-min-width: 200px;
-background-color: var(--colour-1);
-padding: 12px;
-color: var(--colour-2);
-font-size: 80%;
-z-index: 1;
-box-sizing: border-box;
+    content: "et voilà!!!";
+    position: absolute;
+    right: 25px;
+    top: 475px;
+    min-width: 200px;
+    background-color: var(--colour-1);
+    padding: 12px;
+    color: var(--colour-2);
+    font-size: 80%;
+    z-index: 1;
+    box-sizing: border-box;
 }
 
 .card img:hover {
-    filter:blur(10px);
+    filter: blur(10px);
     border: 5px solid var(--colour-2);
     z-index: 2;
 }
+
+/* Added styles for responsive navigation bar */
+@media screen and (max-width: 912px) {
+    header nav {
+        padding-top: 0;
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    header li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin-left: 0;
+        border-top: 1px solid var(--colour-2);
+    }
+
+    header li:first-child {
+        border-top: none;
+    }
+
+    header a {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    header h1 {
+        width: 100%; /* Update width to 100% for smaller screens */
+    }
+}
+
+@media screen and (max-width: 912px) {
+    table {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    th {
+        font-size: 25px;
+    }
+
+    td {
+        font-size: 20px;
+    }
+}
+
