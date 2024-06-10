@@ -9,3 +9,7 @@ Links to contact me will be included, as well as links to my previos projects.
 ## Usage
 
 This site can be used as a referance page for anyone interested in collaborating in a project with me, or anyone whom is just curious about who I am.
+
+## Screanshots
+
+![preview](./assets/images/ss1.png)
